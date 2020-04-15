@@ -18,17 +18,17 @@
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
 						"outputPath": "dist/gvo-j-test",
-						"index": "src/index.html",
-						"main": "src/main.ts",
-						"polyfills": "src/polyfills.ts",
-						"tsConfig": "tsconfig.app.json",
+						"index": "GVO/src/index.html",
+						"main": "GVO/src/main.ts",
+						"polyfills": "GVO/src/polyfills.ts",
+						"tsConfig": "GVO/src/tsconfig.app.json",
 						"aot": true,
 						"assets": [
-							"src/favicon.ico",
-							"src/assets"
+							"GVO/src/favicon.ico",
+							"GVO/src/assets"
 						],
 						"styles": [
-							"src/styles.scss"
+							"GVO/src/styles.scss"
 						],
 						"scripts": []
 					},
@@ -36,8 +36,8 @@
 						"production": {
 							"fileReplacements": [
 								{
-									"replace": "src/environments/environment.ts",
-									"with": "src/environments/environment.prod.ts"
+									"replace": "GVO/src/environments/environment.ts",
+									"with": "GVO/src/environments/environment.prod.ts"
 								}
 							],
 							"optimization": true,
@@ -84,9 +84,9 @@
 					"builder": "@nrwl/jest:jest",
 					"options": {
 						"jestConfig": "./jest.config.js",
-						"tsConfig": "./tsconfig.spec.json",
+						"tsConfig": "GVO/src/tsconfig.spec.json",
 						"passWithNoTests": true,
-						"setupFile": "./src/test-setup.ts"
+						"setupFile": "GVO/src/test-setup.ts"
 					}
 				},
 				"lint": {
